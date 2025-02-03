@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/*  font-family: "Outfit", serif; */
+/* 
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+*/
+body{
+    font-family: "Outfit", serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(217, 54%, 11%) ;
+
+}
+
+section{
+    max-width: 300px;
+   background-color: hsl(216, 50%, 16%);
+   padding: 25px;
+   border-radius: 10px;
+}
+section .image{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.img-icon{
+    opacity: 0;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+.image:hover .img-icon{
+    opacity: 1;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+section>h1{
+    font-size: 25px;
+    color:hsl(0, 0%, 100%) ;
+    transition: .3s;
+    cursor: pointer;
+}
+section>h1:hover{
+    color: hsl(178, 100%, 50%);
+}
+section>p{
+   color:hsl(215deg 29.39% 33.83%);
+    font-size: 20px;
+}
+.midelle{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+
+}
+#icon{
+    width: 20px;
+    margin-right: 5px;
+}
+.first{
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+}
+.clock{
+    color: hsl(215deg 29.39% 33.83%);
+    font-size: 18px;
+}
+section .end{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding-top:  30px;
+    border-top: 1px solid hsl(215, 51%, 70%);
+}
+section .end p{
+color:hsl(215deg 29.39% 33.83%) ;
+}
+section .end span{
+color: aliceblue;
+cursor: pointer;
+transition: .3s;
+}
+section .end span:hover{
+    color: hsl(178, 100%, 50%);
+}
+section .avatar{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
